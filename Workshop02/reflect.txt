@@ -1,0 +1,69 @@
+/************************************************************************
+*                       Workshop 02 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-01-27
+* Authentication Declaration:
+* I have done all the coding by myself and only copied the code that my
+* professor provided to complete my workshops and assignments.
+************************************************************************/
+
+This week's workshop provided a valuable learnings that include file handling 
+with input file stream, counting records in a text file, time monitoring with 
+std::chrono, and implementation of both copy and move semantics for classes 
+with resources. This helps me to understand the concepts of copy and move 
+semantics, chrono library and its implementation. The workshop emphasized the 
+identification of processing-intensive operations, crucial for improving 
+performance in critical code sections associated with resource management. 
+
+The primary reason for difference in time is that the move operation is designed 
+to be more efficient by avoiding unnecessary duplication of data and reusing 
+resources whenever possible. It's particularly useful for optimizing performance 
+in scenarios where ownership transfer of resources is appropriate, as opposed 
+to creating independent copies. This efficiency gain becomes more noticeable 
+when dealing with large objects or complex data structures, as the move operation 
+can be significantly faster than the copy operation.
+
+Moreover, the approach taken to read the input file (gutenberg_shakespeare) in the 
+StringSet constructor and populate the dynamic array is pretty straight forward 
+that goes like:
+
+1.) Initialize Member Variables:
+std::string content         : Used to temporarily store each word read from the file.
+size_t count = 0            : Used to count the number of words in the file.
+std::ifstream file(filename): Creates an input file stream object and opens the file 
+                              specified by the filename.
+
+2.) Count Words in File:
+The first while loop iterates through the file using 'std::getline' to count the number 
+of words in the file and stored it in 'count'.
+
+3.) Reset File Stream Position:
+file.clear() clears any error flags that may be set on the file stream.
+file.seekg(0) resets the file stream position to the beginning of the file.
+
+4.) Allocate Memory for Dynamic Array:
+strings = new std::string[count]: Allocates memory for a dynamic array of strings 
+based on the count of words in the file.
+
+5.) Read Words into Dynamic Array:
+The second while loop reads words from the file using std::getline and stores them 
+in the dynamically allocated strings array.
+
+6.) Close the File:
+file.close(): Closes the file after reading.
+
+
+Apart from this, I introduced to new library chrono that directed us to use system_clock 
+and steady_clock which can be used in different situations or as per the requirement.
+
+steady_clock: This clock is designed to provide a monotonic clock that will never be 
+adjusted, making it suitable for measuring intervals. It might not be tied to the system 
+clock and is not affected by system clock adjustments. So, it can be used when we need 
+to measure time intervals or durations and want a clock that is not affected by system 
+clock adjustments.
+
+system_clock: This clock represents the system-wide real-time wall clock. So, it can be 
+used when when we need to represent the current time in real-world terms, especially when 
+dealing with calendar time or when synchronization with the system clock is important.
