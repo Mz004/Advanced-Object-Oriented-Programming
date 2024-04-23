@@ -1,0 +1,56 @@
+/************************************************************************
+*                       Workshop 03 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-02-04
+* Authentication Declaration:
+* I have done all the coding by myself and only copied the code that my
+* professor provided to complete my workshops and assignments.
+************************************************************************/
+In workshop 03, I get chance to dive into the concept of class templates. 
+I design templates for classes and class variables, making my code work 
+well with different data types. I also learned to put these templates into 
+action by creating instances for practical use. Exploring the inheritance 
+of templated classes was like building on what I already knew, making my 
+code more organized and flexible.
+
+In addition to this, the decision to consolidate template class definitions 
+and implementations in a single header file (*.h file) is driven by practical 
+considerations in C++ template programming. Key reasons for this approach 
+include ensuring the visibility of template definitions at instantiation,
+enhancing user convenience, and simplifying compilation. While this practice 
+is prevalent for template classes, it doesn't extend as a general rule for 
+all C++ classes as we seperate non-template classes's declaration (in a .h 
+file) from implementation (in a .cpp file) to foster modularity and ease of 
+maintenance. Moreover, during the linking phase, any function calls and 
+variables defined within the source file and elsewhere are resolved by 
+linking them to their actual addresses, i.e., their complete definitions in 
+their respective header files. Therefore, all implementations for templates, 
+must be included in header files.
+
+Reason for adding each of member function in Pair module:
+
+1.) Equality Operator Overload bool operator==(const Pair& P);
+Overloading the equality operator allows for straightforward comparison of two Pair 
+objects based on their keys. This is especially useful when we want to determine if 
+two instances represent the same key-value pair. Without this operator, users would 
+need to compare keys explicitly.
+
+2.) Display Function std::ostream& display(std::ostream& os) const;
+This function provides a way to format and output the Pair object to an output stream. 
+This can be helpful for debugging or presenting information to users. Without this 
+function,we need to access the key and value directly for output, potentially leading 
+to code duplication.
+
+3.) Output Stream Operator Overload std::ostream& operator<<(std::ostream& os, const Pair& P);
+Overloading the << operator allows users to directly output a Pair object to an output stream 
+using the familiar stream syntax. This contributes to the usability and readability of the code.
+
+To sum all, each of these members adds functionality and convenience to the Pair class, 
+making it easier to work with and enhancing its usability in different scenarios.
+
+Set class specializes add() for double, addressing precision issues using tolerance-based 
+comparison. Collection class defines static member outside to avoid duplicates, adhere to 
+ODR, and enable proper initialization, promoting code organization.
+

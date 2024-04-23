@@ -1,0 +1,16 @@
+﻿  Pair.cpp
+  w3_p2.cpp
+  Generating Code...
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Workshop03\Collection.h(32,6): error C2953: 'seneca::Collection': class template has already been defined
+  (compiling source file 'w3_p2.cpp')
+  C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Workshop03\Collection.h(21,11):
+  see declaration of 'seneca::Collection'
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Workshop03\Collection.h(35,32): error C2086: 'T seneca::Collection<T,CAPACITY>::m_dummy': redefinition
+  (compiling source file 'w3_p2.cpp')
+  C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Workshop03\Collection.h(35,32):
+  see declaration of 'seneca::Collection<T,CAPACITY>::m_dummy'
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Workshop03\Collection.h(38,5): error C1903: unable to recover from previous error(s); stopping compilation
+  (compiling source file 'w3_p2.cpp')
+  

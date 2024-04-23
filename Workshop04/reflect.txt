@@ -1,0 +1,11 @@
+/************************************************************************
+*                       Workshop 04 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-02-11
+* Authentication Declaration:
+* I have done all the coding by myself and only copied the code that my
+* professor provided to complete my workshops and assignments.
+************************************************************************/
+In this workshop, I learned about two main ways classes can relate to each other: composition and aggregation. Composition means one class completely owns another, like how ConfirmOrder manages Toy objects directly. This is shown by ConfirmOrder handling a dynamic array of Toy pointers. I also learned about aggregation, where one class has objects but doesn't necessarily own them, like how Child might have Toy objects but doesn't control their lifespan. Throughout the workshop, I practiced using string functions to handle text and learned about managing dynamic arrays of pointers to objects. Understanding how to copy and move objects was crucial, especially in knowing when to make deep copies or just copy pointers. Though it was challenging at first, I tackled problems by understanding the concepts better and applying them in my code. Overall, the workshop taught me valuable concepts in designing class relationships, handling memory dynamically, and optimizing resource usage in C++.
