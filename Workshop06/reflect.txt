@@ -1,0 +1,21 @@
+/************************************************************************
+*                       Workshop 06 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-03-10
+* Authentication Declaration:
+* I declare that this submission is the result of my own work and I only
+* copied the code that my professor provided to complete my workshops and 
+* assignments. This submitted piece of work has not been shared with any 
+* other student or 3rd party content provider.
+************************************************************************/
+
+In this workshop, I have learned valuable concepts of managing polymorphic objects, handling dynamic memory allocation for polymorphic objects, reporting and handling exceptions, and effectively utilizing containers from the C++ Standard Library (STL). One of key learnings is the management of polymorphic objects using the vector container from the STL. By storing pointers to base class objects (`seneca::Person`) in a vector, I was able to accommodate objects of derived classes (`Employee`, `Professor`, `Student`) polymorphically. This approach allowed for efficient memory utilization and facilitated polymorphic behavior when accessing and manipulating objects within the container. Moreover, I get to know that deallocating dynamically allocated memory in the vector is essential to prevent memory leaks. Since the vector contains pointers to dynamically allocated objects, failing to deallocate this memory would result in resource leaks and potential performance issues. By iterating through the vector and explicitly deleting each dynamically allocated object in the destructor of the `College` class, I ensured proper memory cleanup.
+
+In the `loadData()` function, different scenarios can arise when building objects from the input file, such as encountering an unknown type of person or encountering invalid data within a record. To detect these issues, I implemented error handling using try-catch blocks. However, catching exceptions by string representation may not be the most robust approach, as it relies on error messages being thrown as strings. An alternative solution could involve defining custom exception classes for specific error scenarios, allowing for more granular error handling and providing descriptive error messages.
+
+In this workshop, I utilized both `std::list<seneca::Person*>` and `std::vector<seneca::Person*>` to store collections of persons as pointers. While it is technically possible to use `std::list<seneca::Person>` and `std::vector<seneca::Person>` instead, storing pointers offers several advantages. Firstly, storing pointers allows for polymorphic behavior, enabling heterogeneous collections of objects. Additionally, using pointers facilitates more efficient memory management, especially when dealing with large collections or objects with polymorphic behavior.
+
+To sum up all, this workshop provided me a comprehensive understanding in managing polymorphic objects, dynamic memory allocation, error handling, and container usage in C++.
+
