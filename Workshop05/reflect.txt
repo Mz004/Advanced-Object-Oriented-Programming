@@ -1,0 +1,25 @@
+/************************************************************************
+*                       Workshop 05 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-02-18
+* Authentication Declaration:
+* I declare that this submission is the result of my own work and I only
+* copied the code that my professor provided to complete my workshops and 
+* assignments. This submitted piece of work has not been shared with any 
+* other student or 3rd party content provider.
+************************************************************************/
+
+In this workshop, I learned to design and code function objects (Functors) and lambda expressions and their difference along with exception handling. Functors are classes or can be structs with an overloaded operator(), offering flexibility and state maintenance while Lambda expressions are anonymous functions with variable capture capabilities, providing concise syntax. Functors can be used for complex tasks requiring state maintenance or custom behavior. For instances, the functor in spellChecker class is invoked like a function:
+void SpellChecker::operator()(std::string& text) 
+While on the other hand, lambda expressions can be used for short tasks or when variable capture is necessary. In the fixSpelling function of the Book and Movie classes, lambda expressions could be used instead of functors for simplicity.
+template <typename T>
+void fixSpelling(T& spellChecker) 
+{ 
+    spellChecker(m_description); 
+}
+
+Moreover, the SpellChecker constructor generates exceptions for bad file names. To handle errors without exceptions, we can return error codes or use error handling flags. Avoiding exceptions can improve performance and simplify error handling logic. However, error codes may clutter code and require additional error-checking logic.
+In addition, Movie and Book classes share similar logic for loading data from files. To avoid duplication, i would create a separate utility function or class responsible for loading data. lower coupling loading logic improves code maintainability and promotes code reuse. This approach help us to achieve modularity and reduces redundancy.
+Lastly, Default constructors in Movie and Book classes, allowing instances to be created without initial data. Whether to remove them depends on usage scenarios. If instances must be initialized with data, default constructors may not be necessary and could be removed to enforce proper initialization. However, they provide convenience for cases where data initialization is optional.
