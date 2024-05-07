@@ -1,0 +1,53 @@
+/*******************************************************************
+*                       Workshop 07 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-03-17
+* Authentication Declaration:
+* I declare that this submission is the result of my own work and I 
+* only copied the code that my professor provided to complete my 
+* workshops and assignments. This submitted piece of work has not 
+* been shared with any other student or 3rd party content provider.
+*******************************************************************/
+
+After completing this workshop, I have learned several new prowerful 
+concepts and utilized several STL functions:
+
+1. `std::sort`: I chose `std::sort` to sort the collection of songs 
+based on different fields such as title, album, or length. This 
+function provides efficient sorting algorithms and simplifies the 
+sorting process compared to implementing it manually.
+
+2. `std::any_of` and `std::copy_if`: I employed these functions 
+in the `inCollection` and `getSongsForArtist` functions, respectively, 
+to search for songs by a specific artist. These functions provide a 
+concise and readable way to perform searches and filter operations 
+on containers.
+
+Using STL algorithms offers several advantages over implementing 
+functionality using loops like Readability and maintainability as 
+STL algorithms provide clear and concise code that is easy to 
+understand and maintain, compared to writing custom loop logic. 
+Also, STL algorithms are often optimized for performance and can 
+outperform custom loop implementations due to their use of 
+efficient algorithms and data structures. And lastly, STL 
+algorithms provides flexibility as they are highly reusable and 
+can be easily adapted to work with different containers and data 
+types, reducing code duplication and improving code modularity.
+
+To prevent clients from specifying an invalid field for sorting, 
+the function signature can be redesigned to use an enum class or 
+a set of string literals representing valid field names. This 
+would allow the compiler to enforce valid field names at compile 
+time, preventing errors caused by misspelled or invalid field 
+names. 
+For example:
+enum class SortField { Title, Artist, Album, Length };
+void sort(SortField field);
+
+By using an enum class, the client can only specify valid field 
+names defined in the enum, ensuring that any errors are detected 
+by the compiler.
+
+
