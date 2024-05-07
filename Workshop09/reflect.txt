@@ -1,0 +1,32 @@
+/*******************************************************************
+*                       Workshop 09 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-03-31
+* Authentication Declaration:
+* I declare that this submission is the result of my own work and I 
+* only copied the code that my professor provided to complete my 
+* workshops and assignments. This submitted piece of work has not 
+* been shared with any other student or 3rd party content provider.
+*******************************************************************/
+In this workshop 09, I've learned and understand various concepts like 
+the utilization of binary files and processind data using multiple threads.
+In my solution, I employed binary files to store and manipulate complex 
+data structures, streamlining processes and ensuring data integrity.
+Another important concept was the binding of functions to their arguments. 
+This practice proved indispensable in this workshop, facilitating modularity 
+and reusability. By binding functions to specific arguments, I was able to 
+create specialized versions tailored to different scenarios.
+
+The workshop also help me to understand significance of leveraging multiple 
+threads. Harnessing the power of multi-threading to enhance performance and 
+responsiveness in this workshop. By distributing tasks across threads, we 
+effectively utilized system resources, optimizing overall efficiency. 
+we implemented multi-threading, exemplifying the advantages of parallel execution.
+
+Furthermore, we delved into futures and packaged_tasks, exploring their 
+symbiotic relationship in concurrent programming. Futures allowed us to 
+asynchronously retrieve results from parallel tasks, while packaged_tasks 
+encapsulated computations for concurrent execution. By integrating these 
+constructs with threads, we orchestrated seamless parallel workflows.
