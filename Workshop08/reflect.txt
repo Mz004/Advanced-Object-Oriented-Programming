@@ -1,0 +1,27 @@
+/*******************************************************************
+*                       Workshop 08 reflection
+* Name       : Manav Alpeshbhai Zadafiya
+* Email      : mazadafiya@myseneca.ca
+* Student ID : 144095221
+* Date       : 2024-03-24
+* Authentication Declaration:
+* I declare that this submission is the result of my own work and I 
+* only copied the code that my professor provided to complete my 
+* workshops and assignments. This submitted piece of work has not 
+* been shared with any other student or 3rd party content provider.
+*******************************************************************/
+In this workshop 08, I've learned and understand the significance concept of 
+smart pointers in C++ programming. Smart pointers, such as `std::unique_ptr` 
+and `std::shared_ptr`, offer automatic memory management, eliminating the 
+need for manual memory deallocation and reducing the risk of memory leaks. 
+For instance, in our implementation, using `std::unique_ptr` in the `List` 
+class simplified memory management, ensuring that memory was deallocated 
+when objects went out of scope. Additionally, smart pointers prevent issues 
+like dangling pointers by automatically nullifying pointers when objects 
+are destroyed, enhancing code safety. Compared to raw pointers, smart 
+pointers provide clearer ownership semantics, making code more readable 
+and expressive. The use of smart pointers in our solution not only improved 
+code safety but also reduced the likelihood of common pitfalls such as double 
+deletion. Overall, this workshop deepened my understanding of memory management 
+in C++, highlighting the advantages of smart pointer syntax in terms of safety, 
+reliability, and code clarity.

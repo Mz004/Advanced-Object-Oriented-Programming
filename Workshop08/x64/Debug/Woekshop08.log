@@ -1,0 +1,22 @@
+﻿  utilities.cpp
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(63,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(72,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(81,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'utilities.cpp')
+  
+  w8_p2.cpp
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(63,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(72,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\element.h(81,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'w8_p2.cpp')
+  
+  Generating Code...
+  Woekshop08.vcxproj -> C:\Users\manav\OneDrive\Desktop\SENECA CPA\Sem 3\OOP345\Woekshop08\x64\Debug\Woekshop08.exe
